@@ -1,0 +1,148 @@
+<html>
+<head>
+	<title>Ejemplos de PDO</title>
+
+	  
+		<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--final de Estilos-->
+		   <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	  <div class="container">
+	  	  <div class="page-header">
+                <h1>Ejemplos de PHP</h1>      
+            </div>
+					<div class="CajaInicio animated bounceInRight">
+							<h1>Ejemplos PDO </h1>
+						
+							<form id="FormIngreso">
+
+
+									 
+
+									    
+									    <a href="ejemplo1PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">1-Ejemplo fetchall</h4>
+									      <p class="list-group-item-text">consulta SELECT</p>
+									       <p class="list-group-item-text">Tomado de datos como un array asociativo.</p>
+									    </a>
+
+									
+									    <a href="ejemplo2PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">2-Ejemplo fetch(PDO::FETCH_ASSOC)</h4>
+									      <p class="list-group-item-text">consulta SELECT</p>
+									       <p class="list-group-item-text">Tomado de datos como un array asociativo.</p>
+									    </a>
+
+									  
+									    <a href="ejemplo3PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">3-Ejemplo fetch(PDO::FETCH_NUM)</h4>
+									      <p class="list-group-item-text">consulta SELECT</p>
+									       <p class="list-group-item-text">Tomado de datos como un array numerico.</p>
+									    </a>
+
+									   
+									    <a href="ejemplo4PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">4-Ejemplo fetch(PDO::FETCH_BOTH)</h4>
+									      <p class="list-group-item-text">consulta SELECT</p>
+									       <p class="list-group-item-text">Tomado de datos como un array asociativo y numerico.</p>
+									    </a>
+
+									       <a href="ejemplo5PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">5-Ejemplo fetch(PDO::FETCH_LAZY)</h4>
+									      <p class="list-group-item-text">consulta SELECT</p>
+									       <p class="list-group-item-text">Tomado de datos como un array de objetos genericos y los atributos con los nombres de las columnas.</p>
+									    </a>
+
+									       <a href="ejemplo6PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">6-Ejemplo fetch(PDO::FETCH_CLASS)-- fetchObject</h4>
+									      <p class="list-group-item-text">consulta SELECT</p>
+									       <p class="list-group-item-text">Tomado de datos como un array de Objetos accediendo a sus métodos.</p>
+									    </a>
+									       <a href="ejemplo7PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">7-Ejemplo setFetchMode(PDO::FETCH_INTO, new cd);</h4>
+									      <p class="list-group-item-text">consulta SELECT</p>
+									       <p class="list-group-item-text">Tomado de datos y guardando los elementos esn la clase estipulada,habilitnado el acceso a sus métodos.</p>
+									    </a>
+									</a>
+									       <a href="ejemplo8PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">8-Ejemplo clase basica para generar conexión</h4>
+									      <p class="list-group-item-text">Conectarnos de manera prolija</p>
+									       <p class="list-group-item-text">creamos una clase que nos permita reutilizar código.</p>
+									    </a>
+									    </a>
+									       <a href="ejemplo9PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">9-Ejemplo clase que encapsula la funcionalidad</h4>
+									      <p class="list-group-item-text">buscar, insertar, borrar, modificar  </p>
+									       <p class="list-group-item-text">cada clase tiene los métodos para realizar el ABM-C.</p>
+									    </a>
+									     <a href="ejemplo10PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">10-Ejecucion de sentencias con parametros</h4>
+									      <p class="list-group-item-text">definicion de parametros </p>
+									       <p class="list-group-item-text">cada parametro tiene un orden y signo de "?" que lo reemplaza </p>
+									    </a>
+									     <a href="ejemplo11PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">11-Ejecucion de sentencias con parametros con nombre ->bindValue(...) </h4>
+									      <p class="list-group-item-text">definicion de parametros </p>
+									       <p class="list-group-item-text">cada parametro tiene un nombre que lo reemplaza en la sentencia </p>
+									    </a>
+									     <a href="ejemplo12PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">12-Ejecucion de sentencias con parametros con nombre y pasado por array</h4>
+									      <p class="list-group-item-text">definicion de parametros </p>
+									       <p class="list-group-item-text">cada parametro tiene un nombre que lo reemplaza en la sentencia </p>
+									    </a>
+
+
+									     <a href="ejemplo13PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">13-Insertar un cd en la base de datos</h4>
+									      <p class="list-group-item-text">utilizacion del $This dentro de la consulta </p>
+									       <p class="list-group-item-text">cada parametro tiene es un atributo de la clase que lo reemplaza en la sentencia </p>
+									    </a>
+
+									       <a href="ejemplo14PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">14-Insertar un cd en la base de datos</h4>
+									      <p class="list-group-item-text">definicion de parametros </p>
+									       <p class="list-group-item-text">cada parametro tiene un nombre que lo reemplaza en la sentencia </p>
+									    </a>
+									      <a href="ejemplo15PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">15-Modificar un cd en la base de datos</h4>
+									      <p class="list-group-item-text">utilizacion de atributos </p>
+									       <p class="list-group-item-text">cada parametro es un atributo de la clase </p>
+									    </a>
+									      <a href="ejemplo16PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">16-Modificar un cd en la base de datos</h4>
+									      <p class="list-group-item-text">utilizacion de parametros </p>
+									       <p class="list-group-item-text">cada parametro espasado por  ->bindValue(...)</p>
+									    </a>
+									    <a href="ejemplo17PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">17-Borrar el cd en la base de datos</h4>
+									      <p class="list-group-item-text">utilizacion de parametros </p>
+									       <p class="list-group-item-text">borramos el registo de la instancia actual de CD</p>
+									    </a>
+									    <a href="ejemplo18PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">18-Borrar Cds por año</h4>
+									      <p class="list-group-item-text">utilizacion de parametros </p>
+									       <p class="list-group-item-text">Se borran todos los cd del 2015</p>
+									    </a>
+									      <a href="ejemplo19PDO.php" class="list-group-item  list-group-item list-group-item-info">
+									      <h4 class="list-group-item-heading">19-Grilla de datos</h4>
+									      <p class="list-group-item-text">Muestro los datos en una tabla </p>
+									       <p class="list-group-item-text">La tabla la diseñamos en un método</p>
+									    </a>
+									  </div>
+									
+							</form>
+						</div>
+		</div>
+</body>
+</html>
